@@ -1,0 +1,47 @@
+.textfield {
+    width: 70%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    background-color: rgb(254, 246, 191);
+    border-color: rgb(245, 245, 130);
+}
+
+label {
+    font-weight:800;
+    font-size: 1.5rem;
+    padding-right: 2rem;
+}
+
+.button {
+    margin-top: 2rem;
+    width: 7rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border-color: rgb(210, 210, 210);
+}
+
+.checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.card-1 {
+    background-color: rgb(185, 242, 242);
+    padding: 3rem;
+    border-radius: 2rem;
+    border-width: 1rem;
+    width: 75%;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+div {
+    height: 4rem;
+    border-color: rgb(245, 245, 130);
+    background-color: rgb(254, 246, 191);
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
