@@ -1,3 +1,7 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .textfield {
     width: 70%;
     height: 2rem;
@@ -44,4 +48,8 @@ div {
     background-color: rgb(254, 246, 191);
     border-radius: 0.5rem;
     margin-top: 2rem;
+}
+
+.output {
+    font-size: 1.5rem;
 }
