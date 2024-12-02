@@ -5,7 +5,7 @@ const output = document.getElementsByClassName('output');
 
 for(let i = 0; i < input.length; i++){
     input[i].addEventListener('click', inputFiledListener);
-}
+};
 
 function inputFiledListener(e) {
     const targetName = e.target.id;
@@ -13,7 +13,7 @@ function inputFiledListener(e) {
             checked();
         }
     console.log('inputfältet', targetName, 'klickades.');
-}
+};
 
 input.forEach((field) => {
     field.addEventListener('blur', handleBlur);
@@ -29,11 +29,21 @@ function handleBlur(e) {
     outputDiv.innerHTML = value;
     console.log(value);
     }
-}
+
+    console.log('inputfältet', name, 'lämnades.');
+};
 
 function checked() {
-/*     const colorField = input; */
-    output.style.backgroundColor = color.value;
+    const outputDiv = document.querySelector('.output');
+    const colorField = card.color;
+    outputDiv.style.backgroundColor = colorField.value;
+};
 
+/* function buttonDel() {
+    btn.addEventListener('click', function (event) {
+        event.preventDefault();
 
-}
+        if(btn) {
+            card.removeChild(output);
+        }
+    )}; */
