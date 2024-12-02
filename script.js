@@ -1,8 +1,7 @@
-const cl = console.log;
 const checkbox = document.getElementById("checkbox");
 const input = document.querySelectorAll("input");
 const btn = document.querySelector("button");
-const output = document.getElementsByTagName("output");
+const output = document.getElementsByClassName("output");
 
 for(let i = 0; i < input.length; i++){
     input[i].addEventListener('click', inputFiledListener);
@@ -21,7 +20,10 @@ input.forEach((field) => {
 function handleBlur(e) {
    const name = e.target.name;
    const value = e.target.value;
-   const outputDiv = document.querySelector('.output');
-   outputDiv.innerHTML = value;
-   console.log(value);
+
+    if(name == 'content') {
+    const outputDiv = document.querySelector('.output');
+    outputDiv.innerHTML = value;
+    console.log(value);
+    }
 }
