@@ -1,7 +1,7 @@
-const checkbox = document.getElementById("checkbox");
-const input = document.querySelectorAll("input");
-const btn = document.querySelector("button");
-const output = document.getElementsByClassName("output");
+const checkbox = document.getElementById('divStyle');
+const input = document.querySelectorAll('input');
+const btn = document.querySelector('.button');
+const output = document.getElementsByClassName('output');
 
 for(let i = 0; i < input.length; i++){
     input[i].addEventListener('click', inputFiledListener);
@@ -9,7 +9,10 @@ for(let i = 0; i < input.length; i++){
 
 function inputFiledListener(e) {
     const targetName = e.target.id;
-    console.log('textfältet', targetName, 'klickades.');
+        if(targetName == 'divStyle') {
+            checked();
+        }
+    console.log('inputfältet', targetName, 'klickades.');
 }
 
 input.forEach((field) => {
@@ -26,4 +29,11 @@ function handleBlur(e) {
     outputDiv.innerHTML = value;
     console.log(value);
     }
+}
+
+function checked() {
+/*     const colorField = input; */
+    output.style.backgroundColor = color.value;
+
+
 }
